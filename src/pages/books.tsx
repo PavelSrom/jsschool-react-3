@@ -19,9 +19,9 @@ export const Books: React.FC = () => {
             <div className="grid grid-cols-12 gap-4">
               {books.map(({ id, name, author }) => (
                 <div key={id} className="col-span-3">
-                  <Paper className="p-4 rounded-lg">
-                    <p className="text-xl font-semibold">{name}</p>
-                    <div className="flex justify-between mt-4">
+                  <Paper className="p-4 rounded-lg h-full flex flex-col">
+                    <p className="text-xl font-semibold mb-4">{name}</p>
+                    <div className="flex justify-between mt-auto">
                       <p>{author}</p>
                       <Tooltip title="View book detail">
                         <IconButton
