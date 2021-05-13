@@ -73,7 +73,7 @@ export const BookDetail: React.FC = () => {
     )
 
   return (
-    <Container fixed maxWidth="lg" className="min-h-screen space-y-8">
+    <Container fixed maxWidth="lg" className="space-y-8">
       <p className="text-3xl text-green-700 font-semibold text-center">
         {bookDetail.name}
       </p>

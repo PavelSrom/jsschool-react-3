@@ -20,7 +20,7 @@ export const Navbar: React.FC = () => {
   const location = useLocation()
 
   return (
-    <AppBar>
+    <AppBar position="static">
       <Toolbar>
         <nav className="w-96 mx-auto flex justify-between items-center">
           {links.map(({ url, label }) => (

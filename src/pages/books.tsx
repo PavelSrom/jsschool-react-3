@@ -9,7 +9,7 @@ export const Books: React.FC = () => {
   const { data: books, isError } = useCollection<BookDTO[]>('books')
 
   return (
-    <Container fixed maxWidth="lg" className="min-h-screen">
+    <Container fixed maxWidth="lg">
       <p className="text-3xl text-green-700 font-semibold text-center my-8">View books</p>
 
       {isError && <p className="text-center">Something went wrong :(</p>}
